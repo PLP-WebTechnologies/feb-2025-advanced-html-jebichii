@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talil Shop</title>
+</head>
+
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>About us</li>
+        <li>Vision</li>
+        <li>missionS</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/31164066/pexels-photo-31164066/free-photo-of-close-up-of-dew-on-purple-leaves-in-nature.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Green vegetation" />
+
+    <!-- Table of Contacts -->
+    <h2>Contacts</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John </td>
+                <td>123 Kapsabet</td>
+                <td>+254712345678</td>
+                <td>john@talil.com</td>
+            </tr>
+            <tr>
+                <td>June</td>
+                <td>456 Nairobi Avenue</td>
+                <td>+254798765432</td>
+                <td>june@talil.com</td>
+            </tr>
+            <tr>
+                <td>Joel </td>
+                <td>789 Kitale</td>
+                <td>+254700123456</td>
+                <td>peter@talil.com</td>
+            </tr>
+            <tr>
+                <td>Susan Lee</td>
+                <td>321 James Road</td>
+                <td>+254733987654</td>
+                <td>susan@talil.com</td>
+            </tr>
+            <tr>
+                <td>Tom K</td>
+                <td>987 Birch Blvd</td>
+                <td>+254722456789</td>
+                <td>tom@talil.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <br /><br />
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <br /><br />
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" />
+        <br /><br />
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="usa">Uganda</option>
+            <option value="uk">Tanzania</option>
+        </select>
+        <br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading" />
+        <label for="reading">Reading</label>
+        <br /><br />
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
